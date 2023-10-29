@@ -1,8 +1,54 @@
 header{
     height: 60px;
-    background-color: yellow;
+    background-color: rgb(245, 245, 241);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(7, 7, 7, 0);
 }
 aside{
     width: 100px;
     background-color: aqua;
+}
+main{
+
+}
+#img-container img{
+    width: 150px;
+   
+}
+#img-container{
+    float: left;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+#logo-container{
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    display: inline-block;
+   
+}
+#logo-container ion-icon{
+    font-size: 1.4rem;
+    padding: 1px 5px;
+
+}
+
+#logo-container ion-icon:hover {
+    background-color:rgb(194, 193, 193);
+    border-radius: 30%;
+}
+#logo-container ion-icon:first-child:hover{
+    color: blue;
+}
+#logo-container ion-icon:nth-child(2):hover{
+    color: rgb(17, 233, 17);
+}
+#logo-container ion-icon:nth-child(3):hover{
+    color: red;
+}
+#logo-container ion-icon:last-child:hover{
+    color: #0072b1 ;
 }
