@@ -8,12 +8,20 @@ header{
     border-bottom: 1px solid rgba(7, 7, 7, 0);
 }
 aside{
-    width: 100px;
-    background-color: aqua;
-}
-main{
+    width: 150px;
+    background-color: rgb(203, 202, 193);
+    top: 60px;
+    height: calc(100vh);
+    position: fixed;
 
 }
+main {
+    background-color: orangered;
+    margin-top: 60px;
+    height: 500px;
+    margin-left: 150px;
+}
+
 #img-container img{
     width: 150px;
    
@@ -37,8 +45,9 @@ main{
 }
 
 #logo-container ion-icon:hover {
-    background-color:rgb(194, 193, 193);
+    background-color:rgb(212, 209, 209);
     border-radius: 30%;
+    
 }
 #logo-container ion-icon:first-child:hover{
     color: blue;
@@ -51,4 +60,32 @@ main{
 }
 #logo-container ion-icon:last-child:hover{
     color: #0072b1 ;
+}
+#main-menu li{
+    padding: 10px ;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(138, 134, 134);
+}
+#main-menu li:hover{
+    background-color: rgba(171, 153, 153, 0.983);
+}
+.drop-down-menu{
+    position: relative;
+}
+.drop-down-menu:hover .sub-menu{
+    opacity: 1;
+}
+.sub-menu{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-top: none;
+    min-width: 100px;
+    border-bottom: none;
+    transition: 500ms;
+    
 }
