@@ -132,3 +132,43 @@ main {
         background-image: url(/img/slides/slide1.jpg);
     }
 }
+main h1{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(31, 29, 29);
+}
+main h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    color: rgb(31, 29, 29);
+}
+main p{
+    padding: 10px;
+    line-height: 2;
+}
+main img{
+    float: right;
+    padding-left: 20px;
+    margin-right: 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+}
+.drop-down-menu::before{
+    content: "";
+    display: block;
+    width: 0;
+    border: 5px solid;
+    border-left-color: black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
