@@ -16,7 +16,7 @@ aside{
 
 }
 main {
-    background-color: orangered;
+    background-color: rgb(240, 235, 233);
     margin-top: 60px;
     height: 500px;
     margin-left: 150px;
@@ -88,4 +88,47 @@ main {
     border-bottom: none;
     transition: 500ms;
     
+}
+.sub-menu img{
+   width: 50px;
+   margin: 0;
+}
+#slider{
+    height: 500px;
+    background-image: url(/img/slides/slide3.jpeg);
+    /* background-position: left; */
+    background-position: center;
+    /* background-repeat: repeat-x; */
+    /* background-size: unset; */
+    animation-name: slider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+
+}
+#slider:hover{
+   /* transform: rotate(2deg); */
+   /* transform: translate(10px); */
+   transform: scale(0.99);
+   
+}
+
+@keyframes slider {
+    form{
+        background-image: url(/img/slides/slide3.jpeg);
+    }
+    20%{
+        background-image: url(/img/slides/slide1.jpg);
+    }
+    40%{
+        background-image: url(/img/slides/slide4.jpg);
+    }
+    60%{
+        background-image: url(/img/slides/slide5.jpg);
+    }
+    80%{
+        background-image: url(/img/slides/slide2.jpg);
+    }
+    to{
+        background-image: url(/img/slides/slide1.jpg);
+    }
 }
